@@ -11,6 +11,11 @@ libboost-all-dev \   # Install boost libraries.
 gdb \                # Install GNU GDB debugger.
 clangd \             # Install clangd language server.
 clang-format \       # Install clang-format.
+libgtest-dev \       # Install gtest unit testing framework.
+python3 \            # Install python.
+python3-pip \        # Install python package manager.
+
+pip install gcovr    # Install gcovr code coverage tool.
 ```
 
 ### Build, Clean and Run Scripts
@@ -18,3 +23,4 @@ clang-format \       # Install clang-format.
 - `./scripts/build.sh`: Builds the project.
 - `./scripts/clean.sh`: Cleans project files.
 - `./scripts/run.sh`: Runs the project.
+- `./scripts/coverage.sh`: Create unit test coverage report.
