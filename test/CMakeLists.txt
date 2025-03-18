@@ -17,6 +17,8 @@ include(${CMAKE_CURRENT_LIST_DIR}/TestFiles.cmake)
 
 add_executable(tests ${TESTFILES})
 
+target_include_directories(tests PUBLIC ${INCLUDEDIRS})
+
 target_link_libraries(tests PRIVATE gtest_main gtest)
 
 include(GoogleTest)
