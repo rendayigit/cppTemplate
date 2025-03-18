@@ -11,3 +11,5 @@ cmake \
 # Force Delete Dirs
 rm -rf $SCRIPTDIR/../bin/
 rm -rf $SCRIPTDIR/../build/
+rm -rf $SCRIPTDIR/../coverage/
+rm -rf $SCRIPTDIR/../.cache/
