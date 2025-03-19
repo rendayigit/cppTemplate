@@ -1,0 +1,35 @@
+name: Ubuntu CI
+
+on: push
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  CI:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 5
+      
+    steps:
+    - name: Install Libraries 
+      run:  |
+        sudo apt update                     # Update the package database.
+        sudo apt install build-essential    # Install GNU compilers.
+        sudo apt install libgtest-dev       # Install Google Test.
+        sudo apt install python3            # Install python.
+        sudo apt install python3-pip        # Install python package manager.
+        pip install gcovr                   # Install gcovr code coverage tool.
+        
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Build
+      run: |
+        cd ${{ github.workspace }}/scripts
+        ./build.sh
+
+    - name: Run Unit Tests With Coverage
+      run: |
+        cd ${{ github.workspace }}/scripts
+        ./coverage.sh
