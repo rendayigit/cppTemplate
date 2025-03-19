@@ -39,3 +39,4 @@ jobs:
       with:
         commit_message: "Update coverage badge"
         file_pattern: .github/workflows/coverage.svg
+        token: ${{ secrets.CPP_TEMPLATE_TOKEN }}
