@@ -2,6 +2,9 @@
 
 ## A Template CPP Project
 
+![Workflow Status](https://img.shields.io/github/actions/workflow/status/rendayigit/cppTemplate/ci.yml)
+![Unit Test Coverage](.github/workflows/coverage.svg)
+
 ### Install dependencies
 
 ```bash

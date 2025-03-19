@@ -63,7 +63,7 @@ SVG_CONTENT="<svg xmlns='http://www.w3.org/2000/svg' width='100' height='20' vie
   </g>
 </svg>"
 
-echo "$SVG_CONTENT" > "$SCRIPTDIR/../coverage/coverage.svg"
+echo "$SVG_CONTENT" > "$SCRIPTDIR/../.github/workflows/coverage.svg"
 
 # Open coverage report
 open "$SCRIPTDIR/../coverage/index.html" > /dev/null 2>&1 &

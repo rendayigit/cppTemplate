@@ -33,3 +33,9 @@ jobs:
       run: |
         cd ${{ github.workspace }}/scripts
         ./coverage.sh
+
+    - name: Commit and Push Badge
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update coverage badge"
+          file_pattern: coverage.svg
