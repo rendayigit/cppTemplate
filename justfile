@@ -10,5 +10,9 @@ run:
 coverage:
   ./scripts/coverage.sh
 
+documentation:
+  ./scripts/documentation.sh
+
 all: build
 cov: coverage
+doc: documentation

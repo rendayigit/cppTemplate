@@ -14,6 +14,7 @@ gdb \                       # Install GNU GDB debugger.
 clangd \                    # Install clangd language server.
 clang-format \              # Install clang-format.
 libgtest-dev \              # Install gtest unit testing framework.
+doxygen \                   # Install doxygen document generator.
 python3 \                   # Install python.
 python3-pip \               # Install python package manager.
 
