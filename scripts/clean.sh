@@ -12,4 +12,5 @@ cmake \
 rm -rf $SCRIPTDIR/../bin/
 rm -rf $SCRIPTDIR/../build/
 rm -rf $SCRIPTDIR/../coverage/
+rm -rf $SCRIPTDIR/../documentation/
 rm -rf $SCRIPTDIR/../.cache/

@@ -43,6 +43,32 @@
                 "cwd": "${workspaceFolder}/"
             },
             "runOptions": {"reevaluateOnRerun": false},
+        },
+        {
+            "label": "Coverage",
+            "type": "shell",
+            "group": "test",
+            "command": [
+                "chmod -R 777 ./scripts/;",
+                "./scripts/coverage.sh"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/"
+            },
+            "runOptions": {"reevaluateOnRerun": false},
+        },
+        {
+            "label": "Documentation",
+            "type": "shell",
+            "group": "test",
+            "command": [
+                "chmod -R 777 ./scripts/;",
+                "./scripts/documentation.sh"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/"
+            },
+            "runOptions": {"reevaluateOnRerun": false},
         }
     ]
 }
